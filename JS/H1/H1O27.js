@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background('lavender');
   fill('black');
-  breedte = width / 4;
+  breedte = 200;
   text("aantal = " + aantal,10,20);  
   
   push();
@@ -25,8 +25,10 @@ function draw() {
   }
   
   pop();
+
+  if (KeyIsDown(LEFT_ARROW)&& aantal >= 2){ 
   
-  if (keyIsDown(RIGHT_ARROW)) {
+  if (keyIsDown(RIGHT_ARROW)) 
     aantal++;
   }   
 }
