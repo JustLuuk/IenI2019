@@ -1,5 +1,7 @@
-var hoogte= 1:
-var diameter= 1;
+function preload() {
+    choco = loadImage("images/choco.jpg");
+    toren = loadImage("images/toren.jpg");
+}
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -9,11 +11,7 @@ function setup() {
 }
 
 function draw() {
-  noStroke();
-  fill('deepskyblue');
-  ellipse(450,450,200);
-    fill("grey")
-    ellipse(0,0,diameter)
-  fill('black');
-  ellipse(100,100,100);
+  background (choco);
+  Image(toren,torenX,torenY);
+  
 }
