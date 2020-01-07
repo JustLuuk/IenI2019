@@ -27,6 +27,19 @@ function draw() {
     yJager += 5;
   }
 
+  if (keyIsDown(65)) {
+    xProoi -= 5;
+  }
+  if (keyIsDown(68)) {
+    xProoi += 5;
+  }
+  if (keyIsDown(87)) {
+    yProoi -= 5;
+  }
+  if (keyIsDown(83)) {
+    yProoi += 5;
+  }
+
   xJager = constrain(xJager,0,width - 100);
   yJager = constrain(yJager,0,height - 100);
 
@@ -36,7 +49,9 @@ function draw() {
   else {
     fill('darkkhaki');
   }
-  rect(800,175,75,50);
+
+
+  rect(xProoi,yProoi,75,50);
   fill('moccasin');
   rect(xJager,yJager,100,100);   
 }
